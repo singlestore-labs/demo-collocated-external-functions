@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  ext_fns:
+    build: .
+    ports:
+      - "8000:8000"
+  singlestore:
+    image: ghcr.io/singlestore-labs/singlestoredb-dev:latest
+    environment:
+      - SINGLESTORE_LICENSE=$SINGLESTORE_LICENSE
+      - ROOT_PASSWORD=test
+    volumes:
+      - ./init.sql:/init.sql:ro
+    ports:
+      - "3306:3306"
+      - "8080:8080"
+      - "9000:9000"
