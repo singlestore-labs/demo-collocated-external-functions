@@ -1,5 +1,7 @@
 # Local external functions demo using Docker Compose
 
+**Attention**: The code in this repository is intended for experimental use only and is not fully tested, documented, or supported by SingleStore. Visit the [SingleStore Forums](https://www.singlestore.com/forum/) to ask questions about this repository.
+
 This repo includes a standalone demonstration of using [SingleStore][s2] [external functions][extfns]. External functions allow you to define a user defined function in SingleStore which, when executed, will call out to an externally defined web service.
 
 [SingleStore][s2] is a scale out relational database optimized for transactions and analytics. This is just one of many extensibility options that SingleStore offers to help it run your workload. You can run SingleStore yourself or use our cloud offering ([sign up here for $500 in credits!][trial]).
